@@ -21,16 +21,16 @@ public class Pet_Clinic {
         System.out.print("Give type: ");
         String Type = in.nextLine().trim();
 
-        int count = 0;
+        int counter = 0;
         // Find and display pets that match the specified type
         for (Pet pet : pets) {
             if (pet.Get_Species().equals(Type)) {
                 System.out.println("- " + pet.Get_Name());
-                count++;
+                counter++;
             }
         }
 
-        System.out.println("Total animals of " + Type + " type: " + count);
+        System.out.println("Total animals of the Type " + Type + " are: " + counter);
         in.close();
     }
 }
