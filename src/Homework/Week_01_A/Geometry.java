@@ -43,7 +43,7 @@ class Rectangle {
     }
 }
 
-//Dint know if a needed a separate class so i made it in the same file
+//Dint know if a needed a separate class, so I made it in the same file
 public class Geometry {
     public static void main(String[] args) {
 
