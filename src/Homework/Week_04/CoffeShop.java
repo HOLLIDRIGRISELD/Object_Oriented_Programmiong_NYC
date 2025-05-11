@@ -41,8 +41,8 @@ public class CoffeShop {
                             //get the needed variables to insert
                             //OrderID
                             System.out.print("Enter Order ID: ");
-                            int orderID = Integer.parseInt(read.nextLine()); //after encountering an error in the reading of  \\
-                                                                             //data i found that the Integer.parseInt fixed it\\
+                            int orderID = Integer.parseInt(read.nextLine()); //after encountering an error in the reading of    \\
+                                                                             //data I found that the Integer.parseInt() fixed it\\
                             //Name
                             System.out.print("Enter Customer Name: ");
                             String name = read.nextLine();
@@ -93,12 +93,14 @@ public class CoffeShop {
                         //read the needed variable
                         System.out.print("Enter Customer Name: ");
                         String Name = read.nextLine();
-                        
-                        String query2 = "SELECT SUM(AmountPaid) AS Total FROM orders WHERE Name = ?";
+
+                        //write the query
+                        String query2 = "SELECT SUM(AmountPaid) AS Total FROM orders WHERE Name = ?"; //needed a new query variable
                         PreparedStatement ps2 = conn.prepareStatement(query2);
                         ps2.setString(1, Name);
                         ResultSet rs2 = ps2.executeQuery();
 
+                        //if statement to print the output or a message that the user is not found
                         if (rs2.next()) {
                             System.out.println("The Total Amount of a Customer is: "+rs2.getDouble("Total")+"$");
                         } else {
@@ -107,19 +109,16 @@ public class CoffeShop {
                         break;
 
                     case "0":
-                        System.out.println("Exiting...");
+                        System.out.println("EXITING");
                         return;
-
+                    //if anything else
                     default:
                         System.out.println("Invalid choice. Try again.");
                 }
-
-
             }
-        } catch (SQLException e) {
+        }
+        catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-
     }
-
 }
