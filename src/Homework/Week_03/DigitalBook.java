@@ -13,7 +13,7 @@ public class DigitalBook extends Book {
 
     //output
     public void DisplayBdata() {
-        //super to get thwe general book data
+        //super to get the general book data
         super.DisplayBdata();
         System.out.println("Size: " + Size + "KB");
     }

@@ -48,8 +48,8 @@ public class Geometry {
     public static void main(String[] args) {
 
         //exercises main output
-        Rectangle r1 = new Rectangle(10, 5);
-        Rectangle r2 = new Rectangle(6, 8);
+        Rectangle r1 = new Rectangle(5, 4);
+        Rectangle r2 = new Rectangle(6, 3);
 
         r1.Print();
         System.out.println();

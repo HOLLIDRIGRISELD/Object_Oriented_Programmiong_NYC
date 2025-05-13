@@ -8,7 +8,7 @@ public class BookStore {
 
         //array list to store all books
         ArrayList<Book> books = new ArrayList<Book>();
-
+        //Sample Books
         //AUDIOBOOK\\
         books.add(new AudioBook("1718502702", "Python Crash Course", 9.99, "Eric Matthes", 480,"Morgan Freeman"));
         //DIGITALBOOK\\
