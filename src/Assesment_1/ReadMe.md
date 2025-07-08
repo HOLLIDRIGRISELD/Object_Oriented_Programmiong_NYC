@@ -2,7 +2,7 @@
 #### At its core, this program is a basic console-based Inventory Management System. This system will allow the user to manage a variety of products: Electronics, Clothing, and Groceries.
 
 ## Overview
-#### This is an object-oriented inventory management system that was designed to demonstrate the core Java programming concepts. Users can add new products, view the inventory, find items by searching for them by their name within the inventory, and digitally update the product price. The system comes preloaded with some sample products, allowing the user can experimsnet without having to add Data on their own.
+#### This is an object-oriented inventory management system that was designed to demonstrate the core Java programming concepts. Users can add new products, view the inventory, find items by searching for them by their name within the inventory, and digitally update the product price. The system comes preloaded with some sample products, allowing the user to experiment without having to add Data on their own.
 
 ## Features
 #### The application has a total of three product categories: Electronics, Clothing, and Groceries. Each category contains its own unique attributes that differentiate them while still sharing the common properties, such as a name and price. The system is providing a simple text-based menu interface for moving between options.
